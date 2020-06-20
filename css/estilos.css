@@ -1,0 +1,18 @@
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background: rgb(255,230,165);
+    background: linear-gradient(90deg, rgba(255,230,165,1) 0%, rgba(181,139,80,1) 77%);
+    color: black;
+}
+
+footer {
+    background: rgb(255,230,165);
+    background: linear-gradient(90deg, rgba(255,230,165,1) 0%, rgba(181,139,80,1) 77%); 
+    color: black;
+    text-align: center;
+    font-size: small;
+}
