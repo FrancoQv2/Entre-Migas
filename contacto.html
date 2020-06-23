@@ -19,60 +19,114 @@
 </head>
 
 <body>
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">Proyecto</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="productos.html">Productos</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Servicios
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="servicio-catering.html">Catering</a>
-                        <a class="dropdown-item" href="servicio-delivery.html">Delivery</a>
-                    </div>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="contacto.html">Contacto<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="acercadenosotros.html">Acerca de Nosotros</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
-                    <img src="img/icon-search-2.svg" alt="Buscar" width="25" height="25">
-                </button>
-            </form>
+    <header>
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">Proyecto</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        </div>
-    </nav>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="servicio-catering.html">Catering</a>
+                            <a class="dropdown-item" href="servicio-delivery.html">Delivery</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contacto.html">Contacto<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acercadenosotros.html">Acerca de Nosotros</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                        <img src="img/icon-search-2.svg" alt="Buscar" width="25" height="25">
+                    </button>
+                </form>
 
+            </div>
+        </nav>
+    </header>
 
 
     <main>
-        <div class="container">
-            <!-- Insertar mapa -->
+        <div class="container p-3">
+            <h1 class="text-center"><strong>Contacto</strong></h1>
+            <hr>
+
+            <div class="row">
+                <div class="container col-sm-12 col-lg-6 mb-5">
+                    <h3 class="text-center">¿Tiene una consulta para nosotros?</h3>
+                    <hr>
+                    <div class="card">
+                        <form class="needs-validation py-4 px-4">
+                            <div class="form-group">
+                                <label for="nombre">Nombre y Apellido</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Juan Perez" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="ejemplo@ejemplo.com"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="asunto">Asunto</label>
+                                <input type="text" class="form-control" id="asunto" placeholder="Asunto de ejemplo"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea class="form-control" name="mensaje" id="mensaje" cols="30" rows="5"
+                                    placeholder="Deje aquí su consulta"></textarea>
+                            </div>
+    
+                            <div class="row">
+                                <div class="col-12 py-2">
+                                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-6 mb-5">
+                    <h3 class="text-center">Nuestra ubicación</h3>
+                    <!-- Insertar mapa -->
+                    <div class="container my-4">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14240.408879082126!2d-65.2072018!3d-26.8367009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1592935576700!5m2!1ses-419!2sar"
+                            width="500" height="500" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
 
 
 
 
 
-            <!-- Formulario para enviar duda -->
+        <!-- Formulario para enviar duda -->
 
 
 
