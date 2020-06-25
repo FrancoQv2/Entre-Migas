@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Franco Quevedo, Gustavo Giordano, Cintia Canton, Javier Romano">
+    <link rel="icon" href="img/logo.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Estilos -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Recetas | Entre Migas</title>
+</head>
+
+<body>
+    <header>
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light align-items-center ">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productosDulces.html">Productos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="recetas.html">Recetas<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="servicio-catering.html">Catering</a>
+                            <a class="dropdown-item" href="servicio-delivery.html">Delivery</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acercadenosotros.html">Acerca de Nosotros</a>
+                    </li>
+                </ul>
+                <div class="buscador-2">
+                    <form class="form-search content-search navbar-form">
+                        <div class="input-group-inline">
+                            <input class="form-control form-text m-0" maxlength="128" placeholder="Buscar"
+                                type="text" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-outline-light" type="submit">
+                                    <span aria-hidden="true"></span>
+                                    <img src="img/ico/icon-search-2.svg" alt="Buscar" height="24">
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-outline-light" type="button" data-toggle="modal"
+                        data-target="#iniciarSesion">
+                        <img src="img/ico/icon-search-2.svg" alt="Buscar" width="24" height="24">
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container p-3">
+            <h1 class="text-center display-4">Recetas</h1>
+            <hr>
+            <div class="accordion" id="acordeonRecetas">
+                <!-- 1° Receta -->
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left receta" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h3>Strudel de manzanas</h3>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#acordeonRecetas">
+                        <div class="card-body p-3">
+                            <img src="./imgrecetas/strudel-de-manzana3.png" alt="" class="img-fluid ">
+                            <h4><u>Ingredientes</u></h4>
+                            <ul class="px-4 m-0">
+                                <h5>Masa</h5>
+                                <li>Harina 0000…300 grs.</li>
+                                <li>Huevo…1 unidad</li>
+                                <li>Aceite…25 ml.</li>
+                                <li>Agua…125 ml.</li>
+                                <li>Manteca derretida…150 grs.</li>
+                                <br>
+                                <h5>Relleno</h5>
+                                <li>Manzanas verdes…500 grs.</li>
+                                <li>Azúcar...150 grs.</li>
+                                <li>Jugo de limón…1 unidad</li>
+                                <li>Canela en polvo…una pizca</li>
+                                <li>Pasas de uva rubias…100 grs.</li>
+                                <li>Nueces…100 grs.</li>
+                                <li>Ralladura de limón…1 unidad</li>
+                            </ul>
+                            <h4><br><u>Relleno</u></h4>
+                            <p><b>1º paso:</b> cortar las manzanas en pequeños cubos y mezclarlas con el azúcar y jugo
+                                de
+                                limón. Dejar reposar unos 15 minutos.</p>
+                            <p><b>2º paso:</b>: escurrir las manzanas en un colador y dejarlas unos 30 minutos. Deben
+                                perder todo
+                                los jugos así no humedecerán
+                                la masa durante la cocción.</p>
+                            <p><b>3º paso:</b>: una vez transcurrido este tiempo, colocarlas en un bowl y mezclarlas
+                                junto con la
+                                canela en polvo, las pasas, la
+                                ralladura de limón y las nueces picadas. Reservar.</p>
+
+                            <h4><br><u>Armado</u></h4>
+                            <p><b>1º paso:</b> una vez que la masa haya descansado lo suficiente, iniciar a estirarla.
+                                Colocar
+                                un mantel de tela fina sobre la mesada y con harina, espolvorear el mantel.
+                            </p>
+                            <p><b>2º paso:</b> colocar la masa en el centro del mantel y con la ayuda del palo de amasar
+                                estirarla lo más fino posible formando
+                                un rectángulo.
+                            </p>
+                            <p><b>3º paso:</b> para poder seguir estirando la masa hasta que quede casi transparente
+                                iniciar a
+                                hacerlo con los puños de la
+                                mano. Colocar la masa sobre los puños y con la mano abierta ir estirando. Colocar la
+                                masa sobre los ante brazos de ser
+                                necesario. Hacerlo con cuidado ya que puede romperse con facilidad.
+                            </p>
+                            <p><b>4º paso:</b> una vez que la masa esté casi transparente, emparejar los bordes con un
+                                cuchillo
+                                y dejarla reposar 10 minutos.
+                            </p>
+                            <p><b>5º paso:</b> transcurrido este tiempo, pincelar suavemente la masa con manteca
+                                derretida.</p>
+                            <p><b>6º paso:</b> colocar el relleno a lo largo de la parte inferior del rectángulo,
+                                dejando un
+                                borde vacío de 10 cm.
+                            </p>
+                            <p><b>7º paso:</b> el borde de masa que quedó sin relleno colocarlo sobre el mismo y con la
+                                ayuda
+                                del mantel iniciar a enrollar.
+                            </p>
+                            <p><b>8º paso:</b> colocar el strudel en una placa previamente enmantecada.</p>
+                            <p><b>9º paso:</b> con mucho cuidado, pincelar el strudel con abundante manteca, realizarle
+                                unos
+                                pequeños cortes a lo ancho y llevar a horno 180ºC por 45 minutos o hasta que esté
+                                dorado.</p>
+                            <p><b>10º paso:</b> una vez cocido, retirarlo del horno y volver a pincelarlo con manteca
+                                derretida.
+                                Dejar entibiar para
+                                consumirlo.
+                            </p>
+                        </div>
+                        <div class="container p-4">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item"
+                                    src="https://www.youtube.com/embed/8s4FmUS23ZU?controls=0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2° Receta -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed receta" type="button"
+                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            <h3>Strudel de manzanas</h3>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#acordeonRecetas">
+                    <div class="card-body p-3">
+                        <img src="./imgrecetas/strudel-de-manzana3.png" alt="" class="img-fluid ">
+                        <h4><u>Ingredientes</u></h4>
+                        <ul class="px-4 m-0">
+                            <h5>Masa</h5>
+                            <li>Harina 0000…300 grs.</li>
+                            <li>Huevo…1 unidad</li>
+                            <li>Aceite…25 ml.</li>
+                            <li>Agua…125 ml.</li>
+                            <li>Manteca derretida…150 grs.</li>
+                            <br>
+                            <h5>Relleno</h5>
+                            <li>Manzanas verdes…500 grs.</li>
+                            <li>Azúcar...150 grs.</li>
+                            <li>Jugo de limón…1 unidad</li>
+                            <li>Canela en polvo…una pizca</li>
+                            <li>Pasas de uva rubias…100 grs.</li>
+                            <li>Nueces…100 grs.</li>
+                            <li>Ralladura de limón…1 unidad</li>
+                        </ul>
+                        <h4><br><u>Relleno</u></h4>
+                        <p><b>1º paso:</b> cortar las manzanas en pequeños cubos y mezclarlas con el azúcar y jugo
+                            de
+                            limón. Dejar reposar unos 15 minutos.</p>
+                        <p><b>2º paso:</b>: escurrir las manzanas en un colador y dejarlas unos 30 minutos. Deben
+                            perder todo
+                            los jugos así no humedecerán
+                            la masa durante la cocción.</p>
+                        <p><b>3º paso:</b>: una vez transcurrido este tiempo, colocarlas en un bowl y mezclarlas
+                            junto con la
+                            canela en polvo, las pasas, la
+                            ralladura de limón y las nueces picadas. Reservar.</p>
+
+                        <h4><br><u>Armado</u></h4>
+                        <p><b>1º paso:</b> una vez que la masa haya descansado lo suficiente, iniciar a estirarla.
+                            Colocar
+                            un mantel de tela fina sobre la mesada y con harina, espolvorear el mantel.
+                        </p>
+                        <p><b>2º paso:</b> colocar la masa en el centro del mantel y con la ayuda del palo de amasar
+                            estirarla lo más fino posible formando
+                            un rectángulo.
+                        </p>
+                        <p><b>3º paso:</b> para poder seguir estirando la masa hasta que quede casi transparente
+                            iniciar a
+                            hacerlo con los puños de la
+                            mano. Colocar la masa sobre los puños y con la mano abierta ir estirando. Colocar la
+                            masa sobre los ante brazos de ser
+                            necesario. Hacerlo con cuidado ya que puede romperse con facilidad.
+                        </p>
+                        <p><b>4º paso:</b> una vez que la masa esté casi transparente, emparejar los bordes con un
+                            cuchillo
+                            y dejarla reposar 10 minutos.
+                        </p>
+                        <p><b>5º paso:</b> transcurrido este tiempo, pincelar suavemente la masa con manteca
+                            derretida.</p>
+                        <p><b>6º paso:</b> colocar el relleno a lo largo de la parte inferior del rectángulo,
+                            dejando un
+                            borde vacío de 10 cm.
+                        </p>
+                        <p><b>7º paso:</b> el borde de masa que quedó sin relleno colocarlo sobre el mismo y con la
+                            ayuda
+                            del mantel iniciar a enrollar.
+                        </p>
+                        <p><b>8º paso:</b> colocar el strudel en una placa previamente enmantecada.</p>
+                        <p><b>9º paso:</b> con mucho cuidado, pincelar el strudel con abundante manteca, realizarle
+                            unos
+                            pequeños cortes a lo ancho y llevar a horno 180ºC por 45 minutos o hasta que esté
+                            dorado.</p>
+                        <p><b>10º paso:</b> una vez cocido, retirarlo del horno y volver a pincelarlo con manteca
+                            derretida.
+                            Dejar entibiar para
+                            consumirlo.
+                        </p>
+                    </div>
+                    <div class="container p-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/8s4FmUS23ZU?controls=0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3° Receta -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed receta" type="button"
+                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            <h3>Strudel de manzanas</h3>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#acordeonRecetas">
+                    <div class="card-body p-3">
+                        <img src="./imgrecetas/strudel-de-manzana3.png" alt="" class="img-fluid ">
+                        <h4><u>Ingredientes</u></h4>
+                        <ul class="px-4 m-0">
+                            <h5>Masa</h5>
+                            <li>Harina 0000…300 grs.</li>
+                            <li>Huevo…1 unidad</li>
+                            <li>Aceite…25 ml.</li>
+                            <li>Agua…125 ml.</li>
+                            <li>Manteca derretida…150 grs.</li>
+                            <br>
+                            <h5>Relleno</h5>
+                            <li>Manzanas verdes…500 grs.</li>
+                            <li>Azúcar...150 grs.</li>
+                            <li>Jugo de limón…1 unidad</li>
+                            <li>Canela en polvo…una pizca</li>
+                            <li>Pasas de uva rubias…100 grs.</li>
+                            <li>Nueces…100 grs.</li>
+                            <li>Ralladura de limón…1 unidad</li>
+                        </ul>
+                        <h4><br><u>Relleno</u></h4>
+                        <p><b>1º paso:</b> cortar las manzanas en pequeños cubos y mezclarlas con el azúcar y jugo
+                            de
+                            limón. Dejar reposar unos 15 minutos.</p>
+                        <p><b>2º paso:</b>: escurrir las manzanas en un colador y dejarlas unos 30 minutos. Deben
+                            perder todo
+                            los jugos así no humedecerán
+                            la masa durante la cocción.</p>
+                        <p><b>3º paso:</b>: una vez transcurrido este tiempo, colocarlas en un bowl y mezclarlas
+                            junto con la
+                            canela en polvo, las pasas, la
+                            ralladura de limón y las nueces picadas. Reservar.</p>
+
+                        <h4><br><u>Armado</u></h4>
+                        <p><b>1º paso:</b> una vez que la masa haya descansado lo suficiente, iniciar a estirarla.
+                            Colocar
+                            un mantel de tela fina sobre la mesada y con harina, espolvorear el mantel.
+                        </p>
+                        <p><b>2º paso:</b> colocar la masa en el centro del mantel y con la ayuda del palo de amasar
+                            estirarla lo más fino posible formando
+                            un rectángulo.
+                        </p>
+                        <p><b>3º paso:</b> para poder seguir estirando la masa hasta que quede casi transparente
+                            iniciar a
+                            hacerlo con los puños de la
+                            mano. Colocar la masa sobre los puños y con la mano abierta ir estirando. Colocar la
+                            masa sobre los ante brazos de ser
+                            necesario. Hacerlo con cuidado ya que puede romperse con facilidad.
+                        </p>
+                        <p><b>4º paso:</b> una vez que la masa esté casi transparente, emparejar los bordes con un
+                            cuchillo
+                            y dejarla reposar 10 minutos.
+                        </p>
+                        <p><b>5º paso:</b> transcurrido este tiempo, pincelar suavemente la masa con manteca
+                            derretida.</p>
+                        <p><b>6º paso:</b> colocar el relleno a lo largo de la parte inferior del rectángulo,
+                            dejando un
+                            borde vacío de 10 cm.
+                        </p>
+                        <p><b>7º paso:</b> el borde de masa que quedó sin relleno colocarlo sobre el mismo y con la
+                            ayuda
+                            del mantel iniciar a enrollar.
+                        </p>
+                        <p><b>8º paso:</b> colocar el strudel en una placa previamente enmantecada.</p>
+                        <p><b>9º paso:</b> con mucho cuidado, pincelar el strudel con abundante manteca, realizarle
+                            unos
+                            pequeños cortes a lo ancho y llevar a horno 180ºC por 45 minutos o hasta que esté
+                            dorado.</p>
+                        <p><b>10º paso:</b> una vez cocido, retirarlo del horno y volver a pincelarlo con manteca
+                            derretida.
+                            Dejar entibiar para
+                            consumirlo.
+                        </p>
+                    </div>
+                    <div class="container p-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/8s4FmUS23ZU?controls=0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container pt-4 text-sm-center text-lg-left">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h6 class="footer-titulo"><b>INFORMACIÓN</b></h6>
+                    <ul class="footer-lista">
+                        <li>
+                            <a href="acercadenosotros.html" class="letra-footer">Acerca de nosotros</a>
+                        </li>
+                        <li>
+                            <a href="error404.html" class="letra-footer">Oportunidades de empleo</a>
+                        </li>
+                        <li>
+                            <a href="error404.html" class="letra-footer">Consigue tu franquicia</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h6 class="footer-titulo"><b>AYUDA</b></h6>
+                    <ul class="footer-lista">
+                        <li>
+                            <a href="error404.html">Términos de uso</a>
+                        </li>
+                        <li>
+                            <a href="error404.html">Política de privacidad</a>
+                        </li>
+                        <li>
+                            <a href="error404.html">Política de cookies</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h6 class="footer-titulo"><b>LEGAL</b></h6>
+                    <ul class="footer-lista">
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="error404.html">Soporte</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h6 class="footer-titulo"><b>REDES SOCIALES</b></h6>
+                    <ul class="footer-lista">
+                        <li>
+                            <img src="img/ico/icon-facebook.svg" alt="Facebook" width="25" height="25">
+                            <a href="https://www.facebook.com/">
+                                Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <img src="img/ico/icon-twitter.svg" alt="Twitter" width="25" height="25">
+                            <a href="https://www.twitter.com/">
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <img src="img/ico/icon-instagram.svg" alt="Instagram" width="25" height="25">
+                            <a href="https://www.instagram.com/">
+                                Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <img src="img/ico/icon-youtube.svg" alt="Youtube" width="25" height="25">
+                            <a href="https://www.youtube.com/">
+                                Youtube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="d-flex align-items.center justify-content-center p-1">
+            <strong>Copyright 2020 &copy; Grupo 3 - Todos los derechos reservados</strong>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

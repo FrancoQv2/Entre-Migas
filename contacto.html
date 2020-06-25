@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Franco Quevedo, Gustavo Giordano, Cintia Canton, Javier Romano">
+    <link rel="icon" href="img/logo.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap"
-        rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Contacto</title>
+    <title>Contacto | Entre Migas</title>
 </head>
+
 <body>
     <header>
         <!-- Nav Bar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="index.html">Proyecto</a>
+        <nav class="navbar navbar-expand-lg navbar-light align-items-center ">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="logo" height="50">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="productos.html">Productos</a>
+                        <a class="nav-link" href="productosDulces.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recetas.html">Recetas</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -46,15 +57,30 @@
                         <a class="nav-link" href="acercadenosotros.html">Acerca de Nosotros</a>
                     </li>
                 </ul>
+                <div class="buscador-2">
+                    <form class="form-search content-search navbar-form">
+                        <div class="input-group-inline">
+                            <input class="form-control form-text m-0" maxlength="128" placeholder="Buscar"
+                                type="text" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-outline-light" type="submit">
+                                    <span aria-hidden="true"></span>
+                                    <img src="img/ico/icon-search-2.svg" alt="Buscar" height="24">
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
-                        <img src="img/ico/icon-search-2.svg" alt="Buscar" width="25" height="25">
+                    <button class="btn btn-outline-light" type="button" data-toggle="modal"
+                        data-target="#iniciarSesion">
+                        <img src="img/ico/icon-search-2.svg" alt="Buscar" width="24" height="24">
                     </button>
                 </form>
             </div>
         </nav>
     </header>
+
     <main>
         <div class="container p-3">
             <h1 class="text-center display-4">Contacto</h1>
@@ -100,91 +126,95 @@
                     <div class="container my-4">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14240.408879082126!2d-65.2072018!3d-26.8367009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1592935576700!5m2!1ses-419!2sar"
-                            height="500" frameborder="0" style="border:0;" allowfullscreen=""
-                            aria-hidden="false" tabindex="0" class="w-100 shadow"></iframe>
+                            height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0" class="w-100 shadow"></iframe>
                     </div>
                 </div>
             </div>
         </div>
         </div>
     </main>
+
     <!-- Footer -->
     <footer>
-        <div class="container p-4 text-dark text-sm-center text-lg-left">
+        <div class="container pt-4 text-sm-center text-lg-left">
             <div class="row">
-                <div class="col-sm-12 col-lg-3">
-                    <h6>INFORMACIÓN</h6>
-                    <dl>
-                        <dt>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h6 class="footer-titulo"><b>INFORMACIÓN</b></h6>
+                    <ul class="footer-lista">
+                        <li>
                             <a href="acercadenosotros.html" class="letra-footer">Acerca de nosotros</a>
-                        </dt>
-                        <dt>
+                        </li>
+                        <li>
                             <a href="error404.html" class="letra-footer">Oportunidades de empleo</a>
-                        </dt>
-                        <dt>
+                        </li>
+                        <li>
                             <a href="error404.html" class="letra-footer">Consigue tu franquicia</a>
-                        </dt>
-                    </dl>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-sm-12 col-lg-3">
-                    <h6>AYUDA</h6>
-                    <dl>
-                        <dt>
-                            <a href="error404.html" class="letra-footer">Términos de uso</a>
-                        </dt>
-                        <dt>
-                            <a href="error404.html" class="letra-footer">Política de privacidad</a>
-                        </dt>
-                        <dt>
-                            <a href="error404.html" class="letra-footer">Política de cookies</a>
-                        </dt>
-                    </dl>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h6 class="footer-titulo"><b>AYUDA</b></h6>
+                    <ul class="footer-lista">
+                        <li>
+                            <a href="error404.html">Términos de uso</a>
+                        </li>
+                        <li>
+                            <a href="error404.html">Política de privacidad</a>
+                        </li>
+                        <li>
+                            <a href="error404.html">Política de cookies</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-sm-12 col-lg-3">
-                    <h6>LEGAL</h6>
-                    <dl>
-                        <dt>
-                            <a href="contacto.html" class="letra-footer">Contacto</a>
-                        </dt>
-                        <dt>
-                            <a href="error404.html" class="letra-footer">Soporte</a>
-                        </dt>
-                    </dl>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h6 class="footer-titulo"><b>LEGAL</b></h6>
+                    <ul class="footer-lista">
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="error404.html">Soporte</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-sm-12 col-lg-3">
-                    <h6>REDES SOCIALES</h6>
-                    <dl>
-                        <dt class="p-1">
-                            <a href="https://www.facebook.com/" class="letra-footer">
-                                <img src="img/ico/icon-facebook.svg" alt="Facebook" width="25" height="25">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h6 class="footer-titulo"><b>REDES SOCIALES</b></h6>
+                    <ul class="footer-lista">
+                        <li>
+                            <img src="img/ico/icon-facebook.svg" alt="Facebook" width="25" height="25">
+                            <a href="https://www.facebook.com/">
                                 Facebook
                             </a>
-                        </dt>
-                        <dt class="p-1">
-                            <a href="https://www.twitter.com/" class="letra-footer">
-                                <img src="img/ico/icon-twitter.svg" alt="Twitter" width="25" height="25">
+                        </li>
+                        <li>
+                            <img src="img/ico/icon-twitter.svg" alt="Twitter" width="25" height="25">
+                            <a href="https://www.twitter.com/">
                                 Twitter
                             </a>
-                        </dt>
-                        <dt class="p-1">
-                            <a href="https://www.instagram.com/" class="letra-footer">
-                                <img src="img/ico/icon-instagram.svg" alt="Instagram" width="25" height="25"> Instagram
+                        </li>
+                        <li>
+                            <img src="img/ico/icon-instagram.svg" alt="Instagram" width="25" height="25">
+                            <a href="https://www.instagram.com/">
+                                Instagram
                             </a>
-                        </dt>
-                        <dt class="p-1">
-                            <a href="https://www.youtube.com/" class="letra-footer">
-                                <img src="img/ico/icon-youtube.svg" alt="Youtube" width="25" height="25"> Youtube
+                        </li>
+                        <li>
+                            <img src="img/ico/icon-youtube.svg" alt="Youtube" width="25" height="25">
+                            <a href="https://www.youtube.com/">
+                                Youtube
                             </a>
-                        </dt>
-                    </dl>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="dropdown-divider"></div>
         <div class="d-flex align-items.center justify-content-center p-1">
-            <strong>&copy; Todos los derechos reservados</strong>
+            <strong>Copyright 2020 &copy; Grupo 3 - Todos los derechos reservados</strong>
         </div>
     </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -197,4 +227,5 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

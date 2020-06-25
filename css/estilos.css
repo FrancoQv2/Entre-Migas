@@ -60,7 +60,7 @@ footer {
 
 .buscador-2 .form-search input[type=text] {
     -webkit-appearance: textfield;
-    -webkit-box-sizing: content-box;
+    /* -webkit-box-sizing: content-box; */
     font-family: inherit;
     font-size: 100%;
     border: solid 1px #ccc;
@@ -91,4 +91,59 @@ footer {
 .buscador-2 .form-search button.btn {
     padding:12px 12px;
     border-top-right-radius:5px;
+}
+
+
+/* PRODUCTOS - RECETAS */
+.productos .card {
+    border-color: #c29b5f;
+}
+.productos .card h2 {
+    background-color: #c29b5f;
+    -webkit-text-stroke: 1px black;
+    color: #ffffff;
+}
+.atitulo {
+    color: #c29b5f;
+}
+.atitulo a:hover {
+    color: #c29b5f;
+    text-decoration: none;
+}
+.boton {
+    background-color: #fee5a4;
+    border-color: #7a5011;
+    color: black;
+}
+.boton:hover {
+    background-color: #a5a29e;
+    border-color: #7a5011;
+    color: black;
+}
+.card:hover .imagefect {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.card {
+    overflow: hidden;
+}
+.navul {
+    background-color: #c29b5f;
+}
+.anav {
+    color: #a5a29e;
+    background-color: #ffe195;
+    text-decoration: none;
+}
+.anav:hover {
+    color: black;
+    text-decoration: none;
+}
+.receta {
+    color: #c29b5f;
+    text-decoration: none;
+}
+.receta:hover {
+    color: #a5a29e;
+    text-decoration: none;
 }
