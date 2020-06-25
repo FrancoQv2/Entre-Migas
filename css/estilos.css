@@ -94,6 +94,13 @@ footer {
 }
 
 
+@media (max-width: 900px) {
+    .card-columns {
+        column-count:1;
+    }
+}
+
+
 /* PRODUCTOS - RECETAS */
 .productos .card {
     border-color: #c29b5f;
