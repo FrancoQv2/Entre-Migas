@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: white;
     font-family: 'Roboto', sans-serif;
@@ -45,52 +49,10 @@ footer {
     color: black;
 }
 
-
-
-.buscador-2 {
-    position: relative;
-    height:50px;
-    width:400px;
-}
-.buscador-2 .form-search {
-    position:absolute;
-    right:0px;
-    top:0px;
-}
-
-.buscador-2 .form-search input[type=text] {
-    -webkit-appearance: textfield;
-    /* -webkit-box-sizing: content-box; */
-    font-family: inherit;
-    font-size: 100%;
-    border: solid 1px #ccc;
-    padding: 9px 9px;
-    width: 200px;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    transition: all .5s;
-}
-.buscador-2 .form-search input[type=text] {
-    width:60px;
-    position:absolute;
-    right:0px;
-    z-index:1000;
-    padding:5.5px 5.5px;
-    cursor:pointer;
-    text-align: center;
-}
-.buscador-2 .form-search div.input-group {
-    width:50px;
-}
-.buscador-2 .form-search input[type=text]:focus {
-    position:absolute;
-    right:60px;
-    width:250px;
-}
-
-.buscador-2 .form-search button.btn {
-    padding:12px 12px;
-    border-top-right-radius:5px;
+@media (max-width: 900px) {
+    .buscador-text {
+        overflow: hidden;
+    }
 }
 
 
@@ -98,6 +60,41 @@ footer {
     .card-columns {
         column-count:1;
     }
+}
+
+/* INDEX carousel */
+
+.carousel-inner {
+    align-items: center;
+    max-height: 900px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+/* ACERCA DE NOSOTROS */
+title{
+    margin-top: 50px;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+    
+.avatar .imagenpro {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+/* ERROR 404 */
+
+.imghomero {
+    float: right;
 }
 
 
