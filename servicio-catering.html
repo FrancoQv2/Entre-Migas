@@ -12,7 +12,8 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- Estilos -->
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&family=Sacramento&display=swap">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/estilos.css">
     <title>Servicio - Catering | Entre Migas</title>
 </head>
@@ -46,7 +47,8 @@
                             Servicios
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item active" href="servicio-catering.html">Catering<span class="sr-only">(current)</span></a>
+                            <a class="dropdown-item active" href="servicio-catering.html">Catering<span
+                                    class="sr-only">(current)</span></a>
                             <a class="dropdown-item" href="servicio-delivery.html">Delivery</a>
                         </div>
                     </li>
@@ -58,16 +60,17 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="buscador-txt form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                    <button class="buscador-btn btn btn-outline-light my-2 my-sm-0" type="submit">
+                    <input class="buscador-txt form-control mr-sm-2" type="search" placeholder="Buscar"
+                        aria-label="Buscar">
+                    <button class="navbar-btn btn btn-outline-light my-2 my-sm-0" type="submit">
                         <img src="img/ico/icon-search-2.svg" alt="Buscar" width="24" height="24">
                     </button>
-                    <button class="btn btn-outline-light ml-2 my-sm-0" type="submit">LogIn</button>
+                    <button class="navbar-btn btn btn-outline-light ml-2 my-sm-0" type="submit">LogIn</button>
                 </form>
             </div>
         </nav>
     </header>
-    
+
     <main>
         <div class="container p-3">
             <h1 class="text-center display-4">Servicio de Catering</h1>
@@ -77,26 +80,24 @@
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="d-block w-100" src="./img/cater/singlutem.jpg" alt="First slide">
-                        <div class="absolute-div"></div>
-                        <div class="carousel-caption">
-                            <h1>TODO LO QUE HACEMOS</h1>
+                        <div class="carousel-caption d-md-block">
+                            <h3>Todo lo que hacemos</h3>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" src="./img/cater/desayunos5.jpg" alt="Second slide">
-                        <div class="absolute-div"></div>
-                        <div class="carousel-caption">
-                            <h1>LO HACEMOS CON PASION</h1>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Lo hacemos con pasión</h3>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <!-- <div class="carousel-item">
                         <img class="d-block w-100" src="./img/cater/7img.jpg" alt="Third slide">
-                    </div>
+                    </div> -->
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -107,11 +108,7 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-
-
-            <h2 class="text-center mt-3">Entre Migas</h2>
-
-            <p class="text-center">
+            <p class="text-center mt-3 mb-4">
                 <br>
                 Fiestas privadas, Casamientos, Cumpleaños, Comuniones, Catering familiar para festejos de Navidad y Año
                 Nuevo.
@@ -122,13 +119,11 @@
                 salones, estancias, carpas, DJ, Barras, ambientación y decoración.
                 <br>
             </p>
-        </div>
-        <div>
             <div class="accordion" id="acordeonCatering">
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse"
+                            <button class="btn btn-link btn-block text-left receta" type="button" data-toggle="collapse"
                                 data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 <strong>BUFFET</strong>
                             </button>
@@ -136,7 +131,7 @@
                     </div>
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                         data-parent="#acordeonCatering">
-                        <div class="container card-body">
+                        <div class="container card-body mt-2 ml-5">
                             <ul>
                                 <li>Con o sin recepción Fingerfood o de Open Bars</li>
                                 <li>Salad bar gourmet</li>
@@ -150,7 +145,7 @@
                 <div class="card">
                     <div class="card-header" id="headingTwo">
                         <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-center collapsed" type="button"
+                            <button class="btn btn-link btn-block text-left collapsed receta" type="button"
                                 data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                                 aria-controls="collapseTwo">
                                 <strong>SERVICIOS</strong>
@@ -158,7 +153,7 @@
                         </h2>
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#acordeonCatering">
-                        <div class="container card-body">
+                        <div class="container card-body mt-2 ml-5">
                             <ul>
                                 <h3>El servicio de Lunch consiste:</h3>
                                 <li>Empanaditas caseras</li>
@@ -175,7 +170,7 @@
                 <div class="card">
                     <div class="card-header" id="headingThree">
                         <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-center collapsed" type="button"
+                            <button class="btn btn-link btn-block text-left collapsed receta" type="button"
                                 data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                                 aria-controls="collapseThree">
                                 <strong>CONTAMOS CON UN SERVICIO DE CATERING CORPORATIVO Y SOCIAL</strong>
@@ -184,7 +179,7 @@
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                         data-parent="#acordeonCatering">
-                        <div class="container card-body">
+                        <div class="container card-body mt-2 ml-5">
                             <div class="row">
                                 <div class="col-sm-12 col-md-6">
                                     <h3> Catering corporativo</h3>
@@ -206,6 +201,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <!-- Boton WhatsApp -->
+        <div class="containerbtn">
+            <div class="redes">
+                <a href="#" class="whatsapp"><i class="fab fa-whatsapp fa-3x fa-lg"></i></a>
             </div>
         </div>
     </main>
@@ -301,6 +302,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/50b380d0ea.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

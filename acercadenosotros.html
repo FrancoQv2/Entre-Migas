@@ -59,11 +59,14 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="buscador-txt form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <input class="buscador-txt form-control mr-sm-2" type="search" placeholder="Buscar"
+                        aria-label="Buscar">
                     <button class="buscador-btn btn btn-outline-light my-2 my-sm-0" type="submit">
                         <img src="img/ico/icon-search-2.svg" alt="Buscar" width="24" height="24">
                     </button>
-                    <button class="btn btn-outline-light ml-2 my-sm-0" type="submit">LogIn</button>
+                    <a href="login.html">
+                        <button class="btn btn-outline-light ml-2 my-sm-0" type="button">LogIn</button>
+                    </a>
                 </form>
             </div>
         </nav>
@@ -75,11 +78,16 @@
             <div class="container p-3">
                 <h1 class="title text-center display-4">Acerca de Nosotros</h1>
                 <hr>
+                <div class="d-flex justify-content-center">
+                    <img src="img/about-us/casapan-frente.jpg" width="100%">
+                </div>
                 <p class="text-justify m-5">
-                    XXXXXXXX nace de una idea de negocio familiar con el objetivo de llevar el pan de cada dia
-                    a la mesa de nuestros clientes teniendo en cuenta la calidad de nuestros productos, partiendo
-                    de la selección de la materia prima hasta llegar al producto final. Siempre con el objetivo de
-                    hacerles llegar un producto casero y artesanal.
+                    <b>Entre Migas</b> nace de una idea de negocio familiar con el objetivo de llevar el pan de
+                    cada dia
+                    a la mesa de nuestros clientes, teniendo en cuenta la calidad de nuestros productos,
+                    partiendo de la selección de la materia prima hasta llegar al producto final.
+                    <br>El resultado es un producto casero y artesanal, el cual podrán compartir con cada uno
+                    de sus seres queridos.
                 </p>
             </div>
 
@@ -89,66 +97,78 @@
                 <hr>
                 <div class="row text-center">
                     <!-- Persona 1 -->
-                    <div class="col-12 col-lg-3 d-flex flex-column align-items-center p-3">
-                        <div class="avatar">
-                            <img src="img/about-us/avatar-hombre.png" class="imagenpro" alt="">
+                    <div class="col-12 col-lg-3 p-3">
+                        <div class="card usuario d-flex flex-column align-items-center mb-3">
+                            <div class="avatar">
+                                <img src="img/about-us/avatar-hombre.png" class="imagenpro" alt="">
+                            </div>
+                            <h2>Franco Q</h2>
+                            <p class="text-black-50 text-center mt-1 mx-1">
+                                23 <br>
+                                Gerente general <br><br>
+                                Le gusta leer sobre novedades informáticas, limpiar códigos y sobre todo dormir
+                                mucho.<br><br>
+                                "FrontEnd o BackEnd, he ahí la cuestión" <br><br>
+                                fq@gmail.com
+                            </p>
+                            <button class="btn btn-secondary">Enviar mensaje</button>
+                            <br>
                         </div>
-                        <h2>Nombre</h2>
-                        <p class="text-black-50">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Magni accusantium animi nihil neque sed ipsam eos! Enim, sequi, est deleniti reiciendis
-                            voluptates molestiae magnam animi non eligendi id culpa dolore blanditiis autem mollitia
-                            hic vel sapiente quisquam eveniet modi reprehenderit! Optio quam earum consequatur,
-                            error saepe illum! Modi, necessitatibus itaque.
-                        </p>
-                        <button class="btn btn-secondary">ver mas detalles</button>
                     </div>
                     <!-- Persona 2 -->
-                    <div class="col-12 col-lg-3 d-flex flex-column align-items-center p-3">
-                        <div class="avatar">
-                            <img src="img/about-us/avatar-mujer.png" class="imagenpro" alt="">
+                    <div class="col-12 col-lg-3 p-3">
+                        <div class="card usuario d-flex flex-column align-items-center mb-3">
+                            <div class="avatar">
+                                <img src="img/about-us/avatar-mujer.png" class="imagenpro" alt="">
+                            </div>
+                            <h2>Cintia C</h2>
+                            <p class="text-black-50 text-center mt-1 mx-1">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit cumque assumenda
+                                perspiciatis natus asperiores voluptas sed exercitationem officia aliquam. Sit dolore
+                                atque ducimus. Eos, pariatur eaque. Eum quis consectetur nostrum.
+                            </p>
+                            <button class="btn btn-secondary">Enviar mensaje</button>
+                            <br>
                         </div>
-                        <h2>Nombre</h2>
-                        <p class="text-black-50">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Magni accusantium animi nihil neque sed ipsam eos! Enim, sequi, est deleniti reiciendis
-                            voluptates molestiae magnam animi non eligendi id culpa dolore blanditiis autem mollitia
-                            hic vel sapiente quisquam eveniet modi reprehenderit! Optio quam earum consequatur,
-                            error saepe illum! Modi, necessitatibus itaque.
-                        </p>
-                        <button class="btn btn-secondary">ver mas detalles</button>
                     </div>
                     <!-- Persona 3 -->
-                    <div class="col-12 col-lg-3 d-flex flex-column align-items-center p-3">
-                        <div class="avatar">
-                            <img src="img/about-us/avatar-hombre.png" class="imagenpro" alt="">
+                    <div class="col-12 col-lg-3 p-3">
+                        <div class="card usuario d-flex flex-column align-items-center mb-3">
+                            <div class="avatar">
+                                <img src="img/about-us/avatar-hombre.png" class="imagenpro" alt="">
+                            </div>
+                            <h2>Javier R</h2>
+                            <p class="text-black-50 text-center mt-1 mx-1">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit cumque assumenda
+                                perspiciatis natus asperiores voluptas sed exercitationem officia aliquam. Sit dolore
+                                atque ducimus. Eos, pariatur eaque. Eum quis consectetur nostrum.
+                            </p>
+                            <button class="btn btn-secondary">Enviar mensaje</button>
+                            <br>
                         </div>
-                        <h2>Nombre</h2>
-                        <p class="text-black-50">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Magni accusantium animi nihil neque sed ipsam eos! Enim, sequi, est deleniti reiciendis
-                            voluptates molestiae magnam animi non eligendi id culpa dolore blanditiis autem mollitia
-                            hic vel sapiente quisquam eveniet modi reprehenderit! Optio quam earum consequatur,
-                            error saepe illum! Modi, necessitatibus itaque.
-                        </p>
-                        <button class="btn btn-secondary">ver mas detalles</button>
                     </div>
                     <!-- Persona 4 -->
-                    <div class="col-12 col-lg-3 d-flex flex-column align-items-center p-3">
-                        <div class="avatar">
-                            <img src="img/about-us/avatar-hombre.png" class="imagenpro" alt="">
+                    <div class="col-12 col-lg-3 p-3">
+                        <div class="card usuario d-flex flex-column align-items-center mb-3">
+                            <div class="avatar">
+                                <img src="img/about-us/avatar-hombre.png" class="imagenpro" alt="">
+                            </div>
+                            <h2>Gustavo G</h2>
+                            <p class="text-black-50 text-center mt-1 mx-1">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit cumque assumenda
+                                perspiciatis natus asperiores voluptas sed exercitationem officia aliquam. Sit dolore
+                                atque ducimus. Eos, pariatur eaque. Eum quis consectetur nostrum.
+                            </p>
+                            <button class="btn btn-secondary">Enviar mensaje</button>
+                            <br>
                         </div>
-                        <h2>Nombre</h2>
-                        <p class="text-black-50">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Magni accusantium animi nihil neque sed ipsam eos! Enim, sequi, est deleniti reiciendis
-                            voluptates molestiae magnam animi non eligendi id culpa dolore blanditiis autem mollitia
-                            hic vel sapiente quisquam eveniet modi reprehenderit! Optio quam earum consequatur,
-                            error saepe illum! Modi, necessitatibus itaque.
-                        </p>
-                        <button class="btn btn-secondary">ver mas detalles</button>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="containerbtn">
+            <div class="redes">
+                <a href="#" class="whatsapp"><i class="fab fa-whatsapp fa-3x fa-lg"></i></a>
             </div>
         </div>
     </main>
@@ -244,6 +264,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/50b380d0ea.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

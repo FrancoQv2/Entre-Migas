@@ -14,6 +14,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilo-delivery.css">
 
     <title>Productos</title>
 </head>
@@ -47,8 +48,8 @@
                             Servicios
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item active" href="servicio-catering.html">Catering<span class="sr-only">(current)</span></a>
-                            <a class="dropdown-item" href="servicio-delivery.html">Delivery</a>
+                            <a class="dropdown-item" href="servicio-catering.html">Catering</a>
+                            <a class="dropdown-item active" href="servicio-delivery.html">Delivery<span class="sr-only">(current)</span></a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -60,10 +61,12 @@
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="buscador-txt form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                    <button class="buscador-btn btn btn-outline-light my-2 my-sm-0" type="submit">
+                    <button class="navbar-btn btn btn-outline-light my-2 my-sm-0" type="submit">
                         <img src="img/ico/icon-search-2.svg" alt="Buscar" width="24" height="24">
                     </button>
-                    <button class="btn btn-outline-light ml-2 my-sm-0" type="submit">LogIn</button>
+                    <a href="login.html">
+                        <button class="navbar-btn btn btn-outline-light ml-2 my-sm-0" type="button">LogIn</button>
+                    </a>
                 </form>
             </div>
         </nav>
@@ -72,41 +75,60 @@
 
 
     <main>
-        <div class="container">
-            <!-- Carousel Sugerencias -->
-
-
-
-
-            <!-- Carousel Mas Vendidos -->
-
-
-
-
-            <h1>Lorem ipsum</h1>
-
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat sint aut aperiam fugiat dolores
-                accusantium
-                maiores numquam minus consequuntur possimus. Perferendis maxime quibusdam architecto! Distinctio quia
-                temporibus
-                quisquam esse iure! <br>
-                In nostrum, ratione fugiat hic reprehenderit, velit, sit aliquid ab molestiae at debitis architecto
-                voluptatem.
-                Excepturi odio illum qui eius aperiam iusto illo distinctio architecto unde, non repellat quam deleniti?
-                Aut earum adipisci iusto unde ad rem tempore, repellat autem commodi consequatur facere quas iure odio
-                culpa
-                dolores dolor neque officiis labore fuga delectus iste aliquid asperiores. Sequi, doloremque illo!
-                Perferendis, a cum! Voluptatibus accusamus error vel, quod culpa ab mollitia totam voluptatum
-                reprehenderit
-                tempora illo numquam repudiandae quas veniam saepe et dolore repellendus exercitationem! Iste tenetur
-                incidunt
-                veniam deserunt. <br>
-                Alias dolor doloribus veritatis tenetur accusamus consectetur? Quos aut beatae molestiae ducimus, est
-                quasi
-                dignissimos saepe voluptates quas. Nam, eum. Perspiciatis vero nihil delectus alias magnam deserunt
-                facilis
-                atque sint.
-            </p>
+        <div class="container p-3">
+            <ul class="cards">
+                <li class="cards__item">
+                    <div class="card">
+                        <div class="card__image card__image--fence"></div>
+                        <div class="card__content">
+                            <div class="card__title">Delivery</div>
+                            <p class="card__text">Contamos con un servicio de delivery rapido y eficaz para cualquier
+                                ocación.
+                            </p>
+                            <button id="btnDelivery" class="btn-delivery btn--block card__btn">Pedilo Acá</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards__item">
+                    <div class="card">
+                        <div class="card__image card__image--river"></div>
+                        <div class="card__content">
+                            <div class="card__title">Panaderia tradicional y Sin Gluten</div>
+                            <p class="card__text">Tus necesidades en nuestras manos, brindandote siempre el mejor servicio.
+                            </p>
+                            <button id="btnGluten" class="btn-delivery btn--block card__btn">Pedilo Acá</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards__item">
+                    <div class="card">
+                        <div class="card__image card__image--record"></div>
+                        <div class="card__content">
+                            <div class="card__title">Especialidades</div>
+                            <p class="card__text">Tenemos ocho,ocho variedades de masas para elegir: para el té, para el
+                                mate, venga y vea que ricas masas.
+                            </p>
+                            <button id="btnEspe" class="btn-delivery btn--block card__btn">Pedilo Acá</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards__item">
+                    <div class="card">
+                        <div class="card__image card__image--flowers"></div>
+                        <div class="card__content">
+                            <div class="card__title">Quedate en Casa</div>
+                            <p class="card__text">En esta pandemia nos cuidamos entre todos...</p>
+                            <button id="btnInfo" class="btn-delivery btn--block card__btn">informacion</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Boton WhatsApp -->
+        <div class="containerbtn">
+            <div class="redes">
+                <a href="#" class="whatsapp"><i class="fab fa-whatsapp fa-3x fa-lg"></i></a>
+            </div>
         </div>
     </main>
 
@@ -196,6 +218,21 @@
 
 
     <!-- Optional JavaScript -->
+    <script>
+        $('#btnInfo').click(function () {
+            window.location = "https://www.argentina.gob.ar/salud/coronavirus-COVID-19";
+        })
+        $('#btnGluten').click(function () {
+            window.location = "login.html";
+        })
+        $('#btnEspe').click(function () {
+            window.location = "login.html";
+        })
+        $('#btnDelivery').click(function () {
+            window.location = "login.html";
+        })
+    </script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -206,6 +243,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/50b380d0ea.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

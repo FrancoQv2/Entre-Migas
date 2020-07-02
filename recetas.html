@@ -58,11 +58,12 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="buscador-txt form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                    <button class="buscador-btn btn btn-outline-light my-2 my-sm-0" type="submit">
+                    <input class="buscador-txt form-control mr-sm-2" type="search" placeholder="Buscar"
+                        aria-label="Buscar">
+                    <button class="navbar-btn btn btn-outline-light my-2 my-sm-0" type="submit">
                         <img src="img/ico/icon-search-2.svg" alt="Buscar" width="24" height="24">
                     </button>
-                    <button class="btn btn-outline-light ml-2 my-sm-0" type="submit">LogIn</button>
+                    <button class="navbar-btn btn btn-outline-light ml-2 my-sm-0" type="submit">LogIn</button>
                 </form>
             </div>
         </nav>
@@ -72,20 +73,358 @@
         <div class="container p-3">
             <h1 class="text-center display-4">Recetas</h1>
             <hr>
+            <div class="container p-3 text-center">
+                <div class="container d-flex justify-content-center">
+                    <img src="img/panadero-feliz-que-muestra-la-bandeja-de-pan-fresco-en-la-cocina-de-la-panadería.jpg" width="100%" alt="">
+                </div>
+                <p class="mt-3">
+                    Porque sabemos que nuestros clientes no solo les gusta disfruta de una buena comida, sino también esforzarse por ella!
+                    <br> Para ellos, dejamos unas recetas fáciles y rápidas!
+                </p>
+            </div>
             <div class="accordion" id="acordeonRecetas">
-                <!-- 1° Receta -->
+                <!-- 1° Receta - Bizcocho de chocolate-->
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left receta" type="button"
+                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <h3>Bizcocho de chocolate ¡Sin pesar ingredientes!</h3>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#acordeonRecetas">
+                        <div class=" container card-body p-3">
+                            <h4><u>Ingredientes</u></h4>
+                            <ul class="px-4 m-0">
+                                <li>1 yogur natural (125gr) Usaremos el vaso del yogur como medida del resto de
+                                    ingredientes</li>
+                                <li>1 vaso de azúcar</li>
+                                <li>1 vaso de aceite, nosotros usamos de girasol</li>
+                                <li>2 vasos de crema de chocolate y avellanas, la que prefieras</li>
+                                <li>3 vasos de harina</li>
+                                <li>2 cucharaditas de levadura química</li>
+                            </ul>
+                            <br>
+                            <h4><u>Instrucciones</u></h4>
+                            <p><b>1º paso:</b> Comenzaremos poniendo en un bol amplio el aceite junto con el azúcar y
+                                removemos bien.
+                            </p>
+                            <p><b>2º paso:</b> A continuación, añadimos el yogur y la crema de chocolate. Mezclamos con
+                                energía hasta tener una textura homogenea.
+                            </p>
+                            <p><b>3º paso:</b> Ahora es el turno de los huevos, los añadiremos de uno en uno
+                                integrándose totalmente en la masa antes de añadir el siguiente.
+                            </p>
+                            <p><b>4º paso:</b> El siguiente paso es añadir la harina junto con la levadura química o
+                                polvo de hornear y mezclamos de nuevo.
+                            </p>
+                            <p><b>5º paso:</b> Solo queda añadir unas avellanas a trocitos, remover ¡Y tenemos la masa
+                                lista!
+                            </p>
+                            <p><b>6º paso:</b> Vertemos la masa en un molde que tenemos ya cubierto con papel de horno.
+                                Cocinamos a 170ºC durante unos 45-50 minutos. Ya sabéis que para comprobar que esté
+                                hecho solo hace falta pincharlo con una brocheta o un palillo largo. Si sale limpio ¡El
+                                bizcocho esta listo! Si queda algo de masa pegada habrá que hornearlo unos minutos más.
+                            </p>
+                            <p><b>7º paso:</b> Una vez fuera del horno lo dejamos perder temperatura durante uno 10
+                                minutos y lo desmoldamos. Una vez frío lo podemos decorar como más nos guste. En nuestro
+                                caso le hemos puesto un poco más de crema de chocolate y avellanas por encima y hemos
+                                añadido más nueces picadas ¡Y a disfrutar!
+                            </p>
+                        </div>
+                        <div class="container p-4">
+                            <div class="video embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zvq8FiH2okg"
+                                    allowfullscreen height="100%"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2° Receta - Churros caseros -->
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed receta" type="button"
+                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                <h3>Churros caseros</h3>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                        data-parent="#acordeonRecetas">
+                        <div class=" container card-body p-3">
+                            <h4><u>Ingredientes</u></h4>
+                            <ul class="px-4 m-0">
+                                <li>1 taza de agua</li>
+                                <li>1 taza de harina 0000 o de trigo común</li>
+                                <li>2 cucharadas de mantequilla</li>
+                                <li>1 chorrito de aceite de girasol</li>
+                                <li>1/2 cucharadita de sal</li>
+                            </ul>
+                            <br>
+                            <h4><u>Instrucciones</u></h4>
+                            <p><b>1º paso:</b> Ponemos a calentar el agua con la mantequilla y la sal.
+                            </p>
+                            <p><b>2º paso:</b> Cuando hierva añadimos la harina de golpe, apartar del fuego y remover
+                                con
+                                una cuchara de madera hasta que la masa se despegue de las paredes del cazo y quede
+                                homogénea, sin grumos de harina. Cuesta un poquito de trabajo pero en nada desaparecen.
+                                Dejamos que la masa se enfríe durante 5 minutos.
+                            </p>
+                            <p><b>3º paso:</b> Cuando esté la masa templada la colocamos en una manga con una boquilla
+                                rizada gruesa.
+                            </p>
+                            <p><b>4º paso:</b> Vamos formando los curros. Lo podemos hacer sobre un plato o alguna
+                                superficie limpia (nosotros hemos usado la tabla de cortar) o directamente sobre una
+                                sartén
+                                con abundante aceite caliente.
+                            </p>
+                            <p><b>5º paso:</b> Iremos friendo los churros en aceite a temperatura media hasta que estén
+                                bien
+                                crujientes y dorados.
+                            </p>
+                            <p><b>6º paso:</b> Una vez los sacamos del aceite los vamos escurriendo sobre papel
+                                absorbente o
+                                de cocina. Los servimos espolvoreados con azúcar o con azúcar y canela y ¡A disfrutar!
+                            </p>
+                        </div>
+                        <div class="container p-4">
+                            <div class="video embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/THsNkkN75f8"
+                                    allowfullscreen height="100%"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3° Receta - Facturas y Medialunas caseras -->
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed receta" type="button"
+                                data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                <h3>Facturas y Medialunas caseras</h3>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#acordeonRecetas">
+                        <div class=" container card-body p-3">
+                            <h4><u>Ingredientes Facturas</u></h4>
+                            <ul class="px-4 m-0">
+                                <h5>Masa</h5>
+                                <li>500 gr de harina 0000</li>
+                                <li>50 gr de azúcar</li>
+                                <li>250 ml de leche</li>
+                                <li>Esencia de vainilla</li>
+                                <li>5 gr de sal</li>
+                                <li>25 gr de levadura</li>
+                                <br>
+                                <h5>Empaste</h5>
+                                <li>25 gr de harina 0000</li>
+                                <li>200 gr de manteca</li>
+                                <br>
+                                <h5>Crema pastelera en microondas</h5>
+                                <li>250 ml de leche</li>
+                                <li>55 gr de azúcar</li>
+                                <li>Ralladura de cáscara de limón</li>
+                                <li>Esencia de vainilla</li>
+                                <li>2 yemas de huevo</li>
+                                <br>
+                                <h5>Almíbar</h5>
+                                <li>1 taza de azúcar</li>
+                                <li>1 taza agua</li>
+                                <li>1 cucharadita de esencia de vainilla</li>
+                                <li>1 cáscara de naranja o limon</li>
+                            </ul>
+                            <br>
+                            <h4><u>Instrucciones</u></h4>
+                        </div>
+                        <div class="container p-4">
+                            <div class="video embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Rn9C2KZLMzA"
+                                    allowfullscreen height="100%"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4° Receta - Palmeritas brioche -->
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed receta" type="button"
+                                data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour">
+                                <h3>Palmeritas brioche</h3>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                        data-parent="#acordeonRecetas">
+                        <div class=" container card-body p-3">
+                            <h4><u>Ingredientes</u></h4>
+                            <ul class="px-4 m-0">
+                                <li>500 gr de harina de trigo</li>
+                                <li>200 ml de leche tibia</li>
+                                <li>1 cucharadita de esencia de vainilla</li>
+                                <li>80 gr de azúcar</li>
+                                <li>25 gr de levadura fresca</li>
+                                <li>1 huevo</li>
+                                <li>50 ml de aceite de girasol</li>
+                                <li>Ralladura de un limón</li>
+                                <li>Azúcar impalpable para espolvorear la masa</li>
+                                <li>1 cucharadita de agua para pintar</li>
+                                <li></li>
+                            </ul>
+                            <br>
+                            <h4><u>Instrucciones</u></h4>
+                        </div>
+                        <div class="container p-4">
+                            <div class="video embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vjk3UJRoxlY"
+                                    allowfullscreen height="100%"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5° Receta - Panecillos de leche dulces -->
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed receta" type="button"
+                                data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                aria-controls="collapseFive">
+                                <h3>Panecillos de leche dulces</h3>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#acordeonRecetas">
+                        <div class=" container card-body p-3">
+                            <h4><u>Ingredientes (para 16 panecillos)</u></h4>
+                            <ul class="px-4 m-0">
+                                <li>Horno: 180°C - calor arriba y abajo</li>
+                                <li>1 Tza. (250ml) Leche tibia</li>
+                                <li>1/2 Tza. (100g) Azúcar</li>
+                                <li>1 sobre (7g) o 2 cdtas. de levadura seca o 21g de levadura fresca</li>
+                                <li>4 Tzas. (560g) de harina de trigo todo uso (se puede usar harina de fuerza o para pan)</li>
+                                <li>1/2 Cdta. de Sal</li>
+                                <li>1/3 Tza. (70g) de mantequilla sin sal derretida</li>
+                                <li>2 Huevos a temperatura ambiente</li>
+                                <li>1 Cdta. de esencia de vainilla</li>
+                                <li>1 Cda. de miel</li>
+                            </ul>
+                            <br>
+                            <h4><u>Para pincelar los panes</u></h4>
+                            <ul class="px-4 m-0">
+                                <li>1 Huevo batido con 2 cucharadas de leche</li>
+                                <li>Opcional: Coco rallado y azúcar al gusto para espolvorear los panes.</li>
+                            </ul>
+                            <br>
+                            <h4><u>Instrucciones</u></h4>
+                        </div>
+                        <div class="container p-4">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ifuz64p_9pA"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6° Receta - Rosquillas-->
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed receta" type="button"
+                                data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                                aria-controls="collapseSix">
+                                <h3>Rosquillas (Donas)</h3>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                        data-parent="#acordeonRecetas">
+                        <div class=" container card-body p-3">
+                            <h4><u>Ingredientes</u></h4>
+                            <ul class="px-4 m-0">
+                                <li>500 ml de leche</li>
+                                <li>125 g de mantequilla derretida</li>
+                                <li>2 huevos</li>
+                                <li>3 cucharadas de azúcar</li>
+                                <li>1 cucharadita de sal</li>
+                                <li>125 ml de agua caliente</li>
+                                <li>1 kg de harina</li>
+                                <li>11 g de levadura seca</li>
+                                <li>1 sobre de azúcar de vainilla</li>
+                                <li>20 g de azúcar glas</li>
+                                <li>800 ml de aceite de girasol para freír</li>
+                            </ul>
+                            <br>
+                            <h4><u>Instrucciones</u></h4>
+                            <p><b>1º paso:</b> Poner en un bol la leche caliente, el agua caliente y mezclar con una cuchara de
+                                madera. A continuación, añadir 1
+                                cucharadita de azúcar y la levadura seca, mezclar y dejar que se disuelve la levadura
+                                durante unos 10-15 minutos. Añadir
+                                los huevos, la mantequilla derretida, sal, 2 cucharadas de azúcar y el azúcar de
+                                vainilla. Batir todo con un batidor.
+                            </p>
+                            <p><b>2º paso:</b> Añadir poco a poco la harina, agitando con una cuchara, a continuación, empezar a
+                                amasar la masa con las manos. La
+                                masa debe tener consistencia media no demasiado blanda, ni demasiado densa. Cubra la
+                                masa con una toalla y déjela
+                                reposar 1.5 horas, hasta que duplique el volumen.
+                            </p>
+                            <p><b>3º paso:</b> Luego dividir la masa en dos partes iguales y estirar el trozo de masa en una toalla
+                                con el espesor de 1 cm y cortar
+                                círculos de tamaño medio, utilizando un vaso de vidrio (diámetro 8 cm). Usted puede dar
+                                forma a las donas en la forma de
+                                clásico — anillo. Pero si quieres llenarlos con mermelada/crema, sería mejor dejarlos
+                                redondos, sin agujero en el medio.
+                            </p>
+                            <p><b>4º paso:</b> Dejar que repose la masa durante 20-30 minutos, hasta que doble su volumen. Vierta
+                                abundante aceite de girasol en una
+                                cacerola con un fondo grueso. A un fuego moderado. Verifique si está lo suficientemente
+                                caliente con la ayuda de un
+                                trocito de masa: si el aceite chisporrotea y hace burbujas alrededor de la masa
+                                sumergido en él, puedes empezar a freír
+                                las donuts.
+                            </p>
+                            <p><b>5º paso:</b> Freír 6-7 donuts en un momento. Tenga en cuenta que van a crecer mucho durante el
+                                proceso térmico. Freírlas 2-3
+                                minutos por cada lado. Poner los Donuts fritos en una toalla de papel para quitar el
+                                exceso de grasa.
+                            </p>
+                            <p><b>6º paso:</b> Si se ha preparado en forma de anillo, simplemente espolvorear con azúcar glas. Y si
+                                desea llenarlos con mermelada /
+                                crema, hacer un agujerito en el medio o (en el lado) con un cuchillo e inserta el
+                                relleno con una jeringa. De esta masa
+                                se pueden preparar cerca 30-40 ¡Y a disfrutar!
+                            </p>
+                        </div>
+                        <div class="container p-4">
+                            <div class="video embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cxA84bLtwmQ"
+                                    allowfullscreen height="100%"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7° Receta - Strudel de Manzana-->
+                <div class="card">
+                    <div class="card-header" id="headingSeven">
+                        <h2 class="mb-0">
                             <button class="btn btn-link btn-block text-left receta" type="button" data-toggle="collapse"
-                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseOne">
                                 <h3>Strudel de manzanas</h3>
                             </button>
                         </h2>
                     </div>
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#acordeonRecetas">
-                        <div class=" container card-body p-3">
-                            <img src="./imgrecetas/strudel-de-manzana3.png" alt="" class="img-fluid ">
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                        data-parent="#acordeonRecetas">
+                        <div class="container card-body p-3">
                             <h4><u>Ingredientes</u></h4>
                             <ul class="px-4 m-0">
                                 <h5>Masa</h5>
@@ -161,199 +500,98 @@
                         <div class="container p-4">
                             <div class="embed-responsive embed-responsive-16by9">
                                 <iframe class="embed-responsive-item"
-                                    src="https://www.youtube.com/embed/8s4FmUS23ZU?controls=0" allowfullscreen></iframe>
+                                    src="https://www.youtube.com/embed/ON07NKsU_w0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 8° Receta - Tarta de limón y merengue -->
+                <div class="card">
+                    <div class="card-header" id="headingEight">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed receta" type="button"
+                                data-toggle="collapse" data-target="#collapseEight" aria-expanded="false"
+                                aria-controls="collapseEight">
+                                <h3>Tarta de limón y merengue</h3>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#acordeonRecetas">
+                        <div class=" container card-body p-3">
+                            <h4><u>Ingredientes</u></h4>
+                            <ul class="px-4 m-0">
+                                <li>1 lámina de masa brisa o quebrada</li>
+                                <li>5 huevos</li>
+                                <li>150ml de zumo de limón</li>
+                                <li>La ralladura de la piel de un limón</li>
+                                <li>350gr de azúcar (300 por un lado y 50 por otro)</li>
+                                <li>45gr de harina</li>
+                                <li>75ml de leche</li>
+                            </ul>
+                            <br>
+                            <h4><u>Instrucciones</u></h4>
+                            <p><b>1º paso:</b> Comenzaremos preparando la base de la tarta. Untamos el interior de un
+                                molde
+                                desechable o desmontable con mantequilla. Cubrimos el interior del molde con la masa
+                                quebrada o brisa, ajustamos a la base y cortamos los sobrantes.
+                            </p>
+                            <p><b>2º paso:</b> Ponemos papel de horno sobre la masa y añadimos un puñado de garbanzos
+                                secos.
+                                Este peso ayudará a que la masa no se hinche y quede bien lisa. Horneamos a 180ºC
+                                durante
+                                30min.
+                            </p>
+                            <p><b>3º paso:</b> Mientras se hornea la base preparamos en un bol la mezcla para la crema.
+                                Mezclamos primero los líquidos: la leche, el zumo de limón, la ralladura de la piel, 3
+                                huevos enteros y dos yemas. Las dos claras las reservamos para el merengue.
+                            </p>
+                            <p><b>4º paso:</b> A la mezcla anterior añadiremos el azúcar y la harina y removemos de
+                                nuevo
+                                hasta que quede una mezcla homogénea.
+                            </p>
+                            <p><b>5º paso:</b> Una vez tengamos la base horneada dejamos enfriar un poco y retiramos los
+                                garbanzos y el papel.
+                            </p>
+                            <p><b>6º paso:</b> Vertemos la mezcla de la crema de limón que hemos preparado dentro de la
+                                base
+                                y horneamos de nuevo unos 30 minutos más a 180ºC. Una vez fuera del horno dejamos
+                                enfriar
+                                bien antes de desmoldar.
+                            </p>
+                            <p><b>7º paso:</b> Una vez tengamos la tarta fría preparamos el merengue. Batimos las claras
+                                con
+                                una pizca de sal en un bol limpio y amplio. Cuando estén ya un poco espumosas añadimos
+                                el
+                                azúcar y seguimos montando hasta que tengan una textura densa y nos permita formar picos
+                                que
+                                se mantengan.
+                            </p>
+                            <p><b>8º paso:</b> Cubrimos la tarta con el merengue. Lo podemos hacer de forma mas rustica,
+                                como nosotros, o con manga y boquilla rizada.
+                            </p>
+                            <p><b>9º paso:</b> Para darle el toque final podemos quemar un poco el merengue con un
+                                soplete
+                                de cocina o meter la tarta la horno unos minutos bajo el grill. ¡Vigilad para que no se
+                                queme el merengue! Y ya tenemos nuestra tarta de limón y merengue lista ¡Ahora solo
+                                queda
+                                disfrutarla!
+                            </p>
+                        </div>
+                        <div class="container p-4">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5xj5Tu1rHRU"
+                                    allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- 2° Receta -->
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed receta" type="button"
-                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                            aria-controls="collapseTwo">
-                            <h3>Strudel de manzanas</h3>
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#acordeonRecetas">
-                    <div class=" container card-body p-3">
-                        <img src="./imgrecetas/strudel-de-manzana3.png" alt="" class="img-fluid ">
-                        <h4><u>Ingredientes</u></h4>
-                        <ul class="px-4 m-0">
-                            <h5>Masa</h5>
-                            <li>Harina 0000…300 grs.</li>
-                            <li>Huevo…1 unidad</li>
-                            <li>Aceite…25 ml.</li>
-                            <li>Agua…125 ml.</li>
-                            <li>Manteca derretida…150 grs.</li>
-                            <br>
-                            <h5>Relleno</h5>
-                            <li>Manzanas verdes…500 grs.</li>
-                            <li>Azúcar...150 grs.</li>
-                            <li>Jugo de limón…1 unidad</li>
-                            <li>Canela en polvo…una pizca</li>
-                            <li>Pasas de uva rubias…100 grs.</li>
-                            <li>Nueces…100 grs.</li>
-                            <li>Ralladura de limón…1 unidad</li>
-                        </ul>
-                        <h4><br><u>Relleno</u></h4>
-                        <p><b>1º paso:</b> cortar las manzanas en pequeños cubos y mezclarlas con el azúcar y jugo
-                            de
-                            limón. Dejar reposar unos 15 minutos.</p>
-                        <p><b>2º paso:</b>: escurrir las manzanas en un colador y dejarlas unos 30 minutos. Deben
-                            perder todo
-                            los jugos así no humedecerán
-                            la masa durante la cocción.</p>
-                        <p><b>3º paso:</b>: una vez transcurrido este tiempo, colocarlas en un bowl y mezclarlas
-                            junto con la
-                            canela en polvo, las pasas, la
-                            ralladura de limón y las nueces picadas. Reservar.</p>
 
-                        <h4><br><u>Armado</u></h4>
-                        <p><b>1º paso:</b> una vez que la masa haya descansado lo suficiente, iniciar a estirarla.
-                            Colocar
-                            un mantel de tela fina sobre la mesada y con harina, espolvorear el mantel.
-                        </p>
-                        <p><b>2º paso:</b> colocar la masa en el centro del mantel y con la ayuda del palo de amasar
-                            estirarla lo más fino posible formando
-                            un rectángulo.
-                        </p>
-                        <p><b>3º paso:</b> para poder seguir estirando la masa hasta que quede casi transparente
-                            iniciar a
-                            hacerlo con los puños de la
-                            mano. Colocar la masa sobre los puños y con la mano abierta ir estirando. Colocar la
-                            masa sobre los ante brazos de ser
-                            necesario. Hacerlo con cuidado ya que puede romperse con facilidad.
-                        </p>
-                        <p><b>4º paso:</b> una vez que la masa esté casi transparente, emparejar los bordes con un
-                            cuchillo
-                            y dejarla reposar 10 minutos.
-                        </p>
-                        <p><b>5º paso:</b> transcurrido este tiempo, pincelar suavemente la masa con manteca
-                            derretida.</p>
-                        <p><b>6º paso:</b> colocar el relleno a lo largo de la parte inferior del rectángulo,
-                            dejando un
-                            borde vacío de 10 cm.
-                        </p>
-                        <p><b>7º paso:</b> el borde de masa que quedó sin relleno colocarlo sobre el mismo y con la
-                            ayuda
-                            del mantel iniciar a enrollar.
-                        </p>
-                        <p><b>8º paso:</b> colocar el strudel en una placa previamente enmantecada.</p>
-                        <p><b>9º paso:</b> con mucho cuidado, pincelar el strudel con abundante manteca, realizarle
-                            unos
-                            pequeños cortes a lo ancho y llevar a horno 180ºC por 45 minutos o hasta que esté
-                            dorado.</p>
-                        <p><b>10º paso:</b> una vez cocido, retirarlo del horno y volver a pincelarlo con manteca
-                            derretida.
-                            Dejar entibiar para
-                            consumirlo.
-                        </p>
-                    </div>
-                    <div class="container p-4">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item"
-                                src="https://www.youtube.com/embed/8s4FmUS23ZU?controls=0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 3° Receta -->
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed receta" type="button"
-                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                            aria-controls="collapseThree">
-                            <h3>Strudel de manzanas</h3>
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#acordeonRecetas">
-                    <div class=" container card-body p-3">
-                        <img src="./imgrecetas/strudel-de-manzana3.png" alt="" class="img-fluid ">
-                        <h4><u>Ingredientes</u></h4>
-                        <ul class="px-4 m-0">
-                            <h5>Masa</h5>
-                            <li>Harina 0000…300 grs.</li>
-                            <li>Huevo…1 unidad</li>
-                            <li>Aceite…25 ml.</li>
-                            <li>Agua…125 ml.</li>
-                            <li>Manteca derretida…150 grs.</li>
-                            <br>
-                            <h5>Relleno</h5>
-                            <li>Manzanas verdes…500 grs.</li>
-                            <li>Azúcar...150 grs.</li>
-                            <li>Jugo de limón…1 unidad</li>
-                            <li>Canela en polvo…una pizca</li>
-                            <li>Pasas de uva rubias…100 grs.</li>
-                            <li>Nueces…100 grs.</li>
-                            <li>Ralladura de limón…1 unidad</li>
-                        </ul>
-                        <h4><br><u>Relleno</u></h4>
-                        <p><b>1º paso:</b> cortar las manzanas en pequeños cubos y mezclarlas con el azúcar y jugo
-                            de
-                            limón. Dejar reposar unos 15 minutos.</p>
-                        <p><b>2º paso:</b>: escurrir las manzanas en un colador y dejarlas unos 30 minutos. Deben
-                            perder todo
-                            los jugos así no humedecerán
-                            la masa durante la cocción.</p>
-                        <p><b>3º paso:</b>: una vez transcurrido este tiempo, colocarlas en un bowl y mezclarlas
-                            junto con la
-                            canela en polvo, las pasas, la
-                            ralladura de limón y las nueces picadas. Reservar.</p>
-
-                        <h4><br><u>Armado</u></h4>
-                        <p><b>1º paso:</b> una vez que la masa haya descansado lo suficiente, iniciar a estirarla.
-                            Colocar
-                            un mantel de tela fina sobre la mesada y con harina, espolvorear el mantel.
-                        </p>
-                        <p><b>2º paso:</b> colocar la masa en el centro del mantel y con la ayuda del palo de amasar
-                            estirarla lo más fino posible formando
-                            un rectángulo.
-                        </p>
-                        <p><b>3º paso:</b> para poder seguir estirando la masa hasta que quede casi transparente
-                            iniciar a
-                            hacerlo con los puños de la
-                            mano. Colocar la masa sobre los puños y con la mano abierta ir estirando. Colocar la
-                            masa sobre los ante brazos de ser
-                            necesario. Hacerlo con cuidado ya que puede romperse con facilidad.
-                        </p>
-                        <p><b>4º paso:</b> una vez que la masa esté casi transparente, emparejar los bordes con un
-                            cuchillo
-                            y dejarla reposar 10 minutos.
-                        </p>
-                        <p><b>5º paso:</b> transcurrido este tiempo, pincelar suavemente la masa con manteca
-                            derretida.</p>
-                        <p><b>6º paso:</b> colocar el relleno a lo largo de la parte inferior del rectángulo,
-                            dejando un
-                            borde vacío de 10 cm.
-                        </p>
-                        <p><b>7º paso:</b> el borde de masa que quedó sin relleno colocarlo sobre el mismo y con la
-                            ayuda
-                            del mantel iniciar a enrollar.
-                        </p>
-                        <p><b>8º paso:</b> colocar el strudel en una placa previamente enmantecada.</p>
-                        <p><b>9º paso:</b> con mucho cuidado, pincelar el strudel con abundante manteca, realizarle
-                            unos
-                            pequeños cortes a lo ancho y llevar a horno 180ºC por 45 minutos o hasta que esté
-                            dorado.</p>
-                        <p><b>10º paso:</b> una vez cocido, retirarlo del horno y volver a pincelarlo con manteca
-                            derretida.
-                            Dejar entibiar para
-                            consumirlo.
-                        </p>
-                    </div>
-                    <div class="container p-4">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item"
-                                src="https://www.youtube.com/embed/8s4FmUS23ZU?controls=0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
+        </div>
+        <!-- Boton WhatsApp -->
+        <div class="containerbtn">
+            <div class="redes">
+                <a href="#" class="whatsapp"><i class="fab fa-whatsapp fa-3x fa-lg"></i></a>
             </div>
         </div>
     </main>
@@ -449,6 +687,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/50b380d0ea.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
